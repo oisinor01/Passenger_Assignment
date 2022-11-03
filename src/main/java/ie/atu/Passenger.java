@@ -27,6 +27,33 @@ public String name(String Name){
     return Name;
 }
 
+public String id(String Id){
+    String id = Id;
+    if (id.length() >= 10)
+    {
+        System.out.println(id + " \n");
+    }
+    else{
+        throw new IllegalArgumentException("Error Id must be minimum 10 characters\n");
+    }
+    return Id;
+
+}
+
+public String phone(String Phone){
+    String phone = Phone;
+    if(phone.length() >= 7)
+    {
+        System.out.println(phone + " \n");
+    }
+    else{
+        throw new IllegalArgumentException("Error Phone number must be minimum 7 characters\n");
+    }
+    return Phone;
+}
+
+
+
 
 
      public String determineAge (int Age){

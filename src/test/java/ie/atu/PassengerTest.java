@@ -38,11 +38,13 @@ class PassengerTest {
 
     @Test
     void testID(){
+        assertEquals("g00379850", Id.id("g00379850"));
 
     }
 
     @Test
     void testPhone(){
+        assertEquals("0871234567", Phone.phone("0871234567"));
 
     }
 
