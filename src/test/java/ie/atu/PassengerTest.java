@@ -32,6 +32,7 @@ class PassengerTest {
 
     @Test
     void testName(){
+        assertEquals("Oisin", Name.name("Oisin"));
 
     }
 

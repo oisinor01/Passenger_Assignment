@@ -7,13 +7,24 @@ public String title(String Title){
     String title = Title;
     if (title == "Mr" || title == "Ms" || title == "Mrs")
     {
-        System.out.println(Title + " ");
+        System.out.println(Title + " \n");
     }
     else{
-        throw new IllegalArgumentException("Error wrong title");
+        throw new IllegalArgumentException("Error wrong title\n");
     }
     return Title;
 
+}
+
+public String name(String Name){
+    String name = Name;
+    if(Name.length() > 3){
+        System.out.println(Name + " \n");
+    }
+    else{
+        throw new IllegalArgumentException("Error name is not long enough...\n");
+    }
+    return Name;
 }
 
 
