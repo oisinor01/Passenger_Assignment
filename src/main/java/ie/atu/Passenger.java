@@ -10,9 +10,9 @@ public String title(String Title){
         System.out.println(Title + " \n");
     }
     else{
-        throw new IllegalArgumentException("Error wrong title\n");
+        throw new IllegalArgumentException("Error invalid title\n");
     }
-    return Title;
+    return title;
 
 }
 
@@ -22,9 +22,9 @@ public String name(String Name){
         System.out.println(Name + " \n");
     }
     else{
-        throw new IllegalArgumentException("Error name is not long enough...\n");
+        throw new IllegalArgumentException("Name  must be minimum 3 characters.... I don't make the rules\n");
     }
-    return Name;
+    return name;
 }
 
 public String id(String Id){
@@ -34,9 +34,9 @@ public String id(String Id){
         System.out.println(id + " \n");
     }
     else{
-        throw new IllegalArgumentException("Error Id must be minimum 10 characters\n");
+        throw new IllegalArgumentException("ERROR invalid ID...\n");
     }
-    return Id;
+    return id;
 
 }
 
@@ -49,21 +49,21 @@ public String phone(String Phone){
     else{
         throw new IllegalArgumentException("Error Phone number must be minimum 7 characters\n");
     }
-    return Phone;
+    return phone;
 }
 
 
-
-
-
-     public String determineAge (int Age){
-         if (Age < 16)
+     public int age(int Age){
+    int age = Age;
+         if (age >= 16)
          {
-             throw new IllegalArgumentException("Passenger too young ");
+             System.out.println(age + " \n");
          }
          else{
-             return ("Persons age entered");
+             throw new IllegalArgumentException("Sorry you must be 16 or over...\n");
+
          }
+         return age;
     }
 
 }
