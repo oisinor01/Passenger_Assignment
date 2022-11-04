@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PassengerTest {
+public class PassengerTest {
       Passenger Title;
       Passenger Name;
       Passenger Id;
